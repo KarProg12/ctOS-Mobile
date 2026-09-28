@@ -1,18 +1,18 @@
-ctOS Mobile
+# ctOS Mobile
 
 «A terminal-based mobile system inspired by the ctOS interface from "watch_dogs2".»
 
 ---
 
-🎯 Goal
+# 🎯 Goal
 
 Create a terminal-based ctOS Mobile application that allows the user to monitor and interact with information about their phone and system through Termux.
 
 ---
 
-🚧 V0.1 — First Version
+# 🚧 V0.1 — First Version
 
-Features
+# Features
 
 - [ ] Startup screen
 - [ ] Main menu
@@ -22,7 +22,7 @@ Features
 
 ---
 
-🔄 Program Flow
+# 🔄 Program Flow
 
 START
   │
@@ -53,9 +53,9 @@ After executing an action:
 
 ---
 
-🧩 Components
+# 🧩 Components
 
-1. Startup Screen
+## 1. Startup Screen
 
 Responsible for:
 
@@ -63,7 +63,7 @@ Responsible for:
 - application version
 - basic device information
 
-2. Main Menu
+## 2. Main Menu
 
 Responsible for:
 
@@ -71,7 +71,7 @@ Responsible for:
 - receiving the user's selection
 - directing the program to the selected feature
 
-3. System Info
+## 3. System Info
 
 Responsible for displaying:
 
@@ -79,22 +79,22 @@ Responsible for displaying:
 - device information
 - system information available through Termux
 
-4. Battery
+## 4. Battery
 
 Responsible for displaying:
 
 - battery level
 - charging status
 
-5. Exit
+## 5. Exit
 
 Terminates the application.
 
 ---
 
-📁 Initial Project Structure
+# 📁 Initial Project Structure
 
-At the beginning:
+## At the beginning:
 
 ctos/
 └── main.py
@@ -120,7 +120,7 @@ ctos/
 
 ---
 
-🧠 Problem-Solving Approach
+# 🧠 Problem-Solving Approach
 
 Do not start by asking:
 
@@ -147,7 +147,7 @@ Solve only that problem
 
 ---
 
-📌 Current Next Step
+# 📌 Current Next Step
 
 Do not add new features yet.
 
