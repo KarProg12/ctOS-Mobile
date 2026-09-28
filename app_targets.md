@@ -4,7 +4,7 @@
  - (later it should monitor the system and network)
 
 # App scheme
-  PY
+
   Boot
     ↓
   ctOS display
@@ -13,4 +13,3 @@
     ├── System info
     ├── Battery
     └── Exit
-  PY
