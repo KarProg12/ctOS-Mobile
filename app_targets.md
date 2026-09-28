@@ -5,11 +5,11 @@
 
 # App scheme
 
-  Boot
-    ↓
-  ctOS display
-    ↓
-  Menu
-    ├── System info
-    ├── Battery
-    └── Exit
+Boot
+  ↓
+ctOS display
+  ↓
+Menu
+  ├── System info
+  ├── Battery
+  └── Exit
