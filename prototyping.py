@@ -1,10 +1,13 @@
-from interactive_buttons import *
+from simple_term_menu import TerminalMenu
 
-buttons = [
-            Button(label="Continue", value="continue"),
-            Button(label="Exit", value="exit")
-          ]
+# Definiujemy opcje menu
+options = ["Continue", "Exit"]
 
-comp = Component(buttons, text_color=Fore.BLACK, highlight_color=Back.GREEN)
-choice = comp.matrix_buttons()
+# Tworzymy interaktywne menu w terminalu
+terminal_menu = TerminalMenu(options)
+menu_entry_index = terminal_menu.show()
+
+# Pobieramy wybraną opcję i zmieniamy na małe litery
+choice = options[menu_entry_index].lower()
 print(f"You chose: {choice}")
+
