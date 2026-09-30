@@ -1,11 +1,16 @@
-from pick import pick
+import inquirer
 
-# Definiujemy opcje i tytuł menu
-title = "Choose an option: "
-options = ["Continue", "Exit"]
+questions = [
+    inquirer.List(
+        'choice',
+        message="Choose an option",
+        choices=['Continue', 'Exit'],
+        carousel=True
+    )
+]
 
-# Wyświetlamy menu (działa na Windows i Linux/Termux)
-option, index = pick(options, title, indicator=">")
+answers = inquirer.prompt(questions)
 
-choice = option.lower()
+# Wyciągamy wybraną opcję
+choice = answers['choice'].lower()
 print(f"You chose: {choice}")
