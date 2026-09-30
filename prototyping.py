@@ -16,6 +16,6 @@ questions = [
 
 answers = inquirer.prompt(questions)
 
-# Wyciągamy wybraną opcję
+# save choice in choice variable and print info for user
 choice = answers['choice'].lower()
 print(f"You chose: {choice}")
