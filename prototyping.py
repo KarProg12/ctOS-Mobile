@@ -1,13 +1,11 @@
-from simple_term_menu import TerminalMenu
+from pick import pick
 
-# Definiujemy opcje menu
+# Definiujemy opcje i tytuł menu
+title = "Choose an option: "
 options = ["Continue", "Exit"]
 
-# Tworzymy interaktywne menu w terminalu
-terminal_menu = TerminalMenu(options)
-menu_entry_index = terminal_menu.show()
+# Wyświetlamy menu (działa na Windows i Linux/Termux)
+option, index = pick(options, title, indicator=">")
 
-# Pobieramy wybraną opcję i zmieniamy na małe litery
-choice = options[menu_entry_index].lower()
+choice = option.lower()
 print(f"You chose: {choice}")
-
